@@ -33,9 +33,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "CarrierSettings",
+	name: "CarrierSettings_signed_45.0.591154042",
 	owner: "google",
-	apk: "proprietary/product/priv-app/CarrierSettings/CarrierSettings.apk",
+	apk: "proprietary/product/priv-app/CarrierSettings_signed_45.0.591154042/CarrierSettings_signed_45.0.591154042.apk",
 	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
@@ -95,9 +95,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "DeviceIntelligenceNetworkPrebuilt",
+	name: "DeviceIntelligenceNetworkPrebuilt-v.U.14.playstore",
 	owner: "google",
-	apk: "proprietary/product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk",
+	apk: "proprietary/product/priv-app/DeviceIntelligenceNetworkPrebuilt-v.U.14.playstore/DeviceIntelligenceNetworkPrebuilt-v.U.14.playstore.apk",
 	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
@@ -108,9 +108,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "DevicePersonalizationPrebuiltPixel2022",
+	name: "DevicePersonalizationPrebuiltPixel2022-v.U.14.playstore",
 	owner: "google",
-	apk: "proprietary/product/priv-app/DevicePersonalizationPrebuiltPixel2022/DevicePersonalizationPrebuiltPixel2022.apk",
+	apk: "proprietary/product/priv-app/DevicePersonalizationPrebuiltPixel2022-v.U.14.playstore/DevicePersonalizationPrebuiltPixel2022-v.U.14.playstore.apk",
 	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
@@ -197,9 +197,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "PixelCameraServicesL10",
+	name: "PixelCameraServices",
 	owner: "google",
-	apk: "proprietary/product/priv-app/PixelCameraServicesL10/PixelCameraServicesL10.apk",
+	apk: "proprietary/product/priv-app/PixelCameraServices/PixelCameraServices.apk",
 	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
@@ -500,14 +500,6 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_apex {
-	name: "com.android.hardware.cas",
-	owner: "google",
-	src: "proprietary/vendor/apex/com.android.hardware.cas.apex",
-	filename: "com.android.hardware.cas.apex",
-	soc_specific: true,
-}
-
-prebuilt_apex {
 	name: "com.google.android.hardware.biometrics.face.lynx",
 	owner: "google",
 	src: "proprietary/vendor/apex/com.google.android.hardware.biometrics.face.lynx.apex",
@@ -576,6 +568,15 @@ prebuilt_etc_xml {
 	name: "android.hardware.confirmationui-service.trusty.vendor",
 	owner: "google",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.confirmationui-service.trusty.vendor.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.contexthub-service.generic",
+	owner: "google",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.contexthub-service.generic.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -693,6 +694,15 @@ prebuilt_etc_xml {
 	name: "manifest_wifi_ext_aidl",
 	owner: "google",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_wifi_ext_aidl.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.google.battery_mitigation-default",
+	owner: "google",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.google.battery_mitigation-default.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
